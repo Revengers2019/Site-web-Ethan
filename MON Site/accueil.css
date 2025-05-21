@@ -1,0 +1,546 @@
+/* Styles pour le corps de la page */
+body {
+    font-family: "Montserrat";
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    
+}
+
+
+
+
+.background {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+}
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 18px; /* Évite le chevauchement avec la barre de navigation */
+    z-index: 1;
+    background-color: #ffffff;
+
+}
+h2 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+
+
+.bloc {
+    font-size: 18px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    color: black;
+    width: 100%; /* Assure que la largeur est constante */
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    font-family: "Montserrat";
+    position: relative;
+
+}
+
+.bloc p,li {
+    text-align: start;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #424242;
+}
+
+.bloc h1 {
+    text-align: start;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+.blocimg{
+    font-size: 18px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 20spx;
+    width: 100%; /* Assure que la largeur est constante */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    font-family: "Montserrat";
+    position: relative;
+
+}
+    .bloc1 {
+        font-size: 18px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        color: black;
+        width: 100%; /* Assure que la largeur est constante */
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        font-family: "Montserrat";
+        border: 1px solid #e6e6e6; /* Bordure autour de chaque bloc */
+        display: block; /* Force l'affichage en colonne */
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    .bloc2 {
+        font-size: 18px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        color: black;
+        width: 100%; /* Assure que la largeur est constante */
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        font-family: "Montserrat";
+        border: 1px solid #e6e6e6; /* Bordure autour de chaque bloc */
+        display: block; /* Force l'affichage en colonne */
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    .bloc2:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .bloc1:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px 0;
+        border: none; /* Assurez-vous qu'il n'y a pas de bordure autour du conteneur */
+    }
+
+
+    @media (max-width: 768px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+
+
+.bloc1 h1 {
+    text-align: start center;
+    width: 100%;
+    background-color:#ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 80px;
+}
+/* Modification spécifique pour les images à l'intérieur des éléments avec bordure */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+    .col-md-6 mb-4{
+
+        align-items: center;
+        color: #424242;
+        padding: auto;
+    }
+
+
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(2, 2, 2, 2);
+    
+
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 0px;
+
+  }
+  /* Gallery container */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 images par ligne */
+    gap: 10px; /* Espacement entre les images */
+    max-width: 880px; /* Largeur ajustée de la galerie */
+    border-radius: 100px;
+    margin: 0 auto; /* Centrage horizontal du conteneur */
+    justify-content: center; /* Centre le contenu dans la galerie */
+    align-items: center; /* Centre verticalement dans la galerie */
+    padding: 20px 0; /* Optionnel, pour donner de l'espace en haut et en bas */
+}
+
+/* Chaque container d'image */
+.image-container {
+    width: 100%;
+    height: 300px; /* Taille du carré */
+    overflow: hidden; /* Masquer l'excédent de l'image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Fond gris clair */
+}
+
+/* Les images dans le container */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* L'image remplit l'espace sans déformer */
+    border-radius: 12px;
+    
+}
+
+
+ 
+.gallery1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 2 images par ligne */
+    gap: 0px; /* Espacement entre les images */
+    max-width: 880px; /* Largeur ajustée de la galerie */
+    margin: 0 auto; /* Centrage horizontal du conteneur */
+    justify-content: center; /* Centre le contenu dans la galerie */
+    align-items: center; /* Centre verticalement dans la galerie */
+    font-size: large;
+}
+
+footer {
+    color: black;
+    font-family: "Montserrat";
+    padding: 30px 0;
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    border: #e6e6e6 1px solid;
+
+
+}
+
+.footer-container {
+    width: 80%; /* Espace flexible */
+    margin: auto;
+    display: flex;
+    justify-content: space-between; /* Sépare en deux parties */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;  /* Chaque partie prend une largeur égale */
+    min-width: 250px; /* Largeur minimale pour éviter de trop rétrécir */
+    text-align: center;
+    box-sizing: border-box; /* Inclut les bordures et les espacements dans la taille */
+}
+
+.footer-left h3,
+.footer-right h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.footer-left p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Style du bouton de téléchargement */
+.footer-download {
+    margin-top: 15px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+    background: #0c3f7c;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.download-btn:hover{
+    background: #0b3b75;
+}
+
+/* --- Media Queries pour les petits écrans (mobile) --- */
+@media (max-width: 768px) {
+    .footer-container {
+        width: 90%; /* Un peu plus large sur les petits écrans */
+        flex-direction: row; /* Maintenir les éléments sur une seule ligne */
+        justify-content: space-between;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+        flex: 1 1 45%; /* Chaque côté prend environ 45% de la largeur */
+        min-width: 250px; /* Empêche d'aller trop bas en largeur */
+    }
+
+    /* Petite modification pour l'espacement des éléments */
+    .footer-left p,
+    .footer-right ul li {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+}
+
+/* --- Pour les très petits écrans (téléphones plus petits) --- */
+@media (max-width: 480px) {
+    .footer-container {
+        width: 95%; /* Ajuste encore plus sur des écrans plus petits */
+    }
+
+    .footer-left,
+    .footer-right {
+        flex: 1 1 100%; /* Prend toute la largeur */
+        text-align: center; /* Centrer tout sur des écrans très petits */
+    }
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    }
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #003366;
+}
+.title img {
+    width: 2s4px;
+    margin-right: 10px;
+}
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #003366;
+}
+.event {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.event::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background: #003366;
+    border-radius: 50%;
+}
+.date {
+    font-weight: bold;
+    color: #003366;
+}
+.title-text {
+    font-weight: bold;
+    font-size: 18px;
+    color: #001f4d;
+}
+.location {
+    font-size: 14px;
+    color: #555;
+}
+.description {
+    font-size: 14px;
+    color: #666;
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .title-text {
+        font-size: 16px;
+    }
+    .location, .description {
+        font-size: 13px;
+    }
+    .timeline {
+        padding-left: 15px;
+    }
+    .timeline::before {
+        left: 4px;
+    }
+    .event {
+        padding-left: 15px;
+    }
+    .event::before {
+        left: -8px;
+        width: 8px;
+        height: 8px;
+    }
+}
+
+.icon img {
+    width: 40px;
+    background-color: #e0efff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+
+.footer-container {
+    width: 100%;
+    background: linear-gradient(135deg, #002b57, #0b3b75);
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    position:static;
+    margin: 0px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-item {
+    width: 22%;
+    min-width: 200px;
+    text-align: left;
+}
+
+.footer-item h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1e90ff;
+    padding-bottom: 5px;
+}
+
+.footer-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-item ul li {
+    margin-bottom: 8px;
+}
+
+.footer-item ul li a {
+    text-decoration: none;
+    color: #1e90ff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-item ul li a:hover {
+    color: #63b3ed;
+}
+
+.footer-item ul li i {
+    margin-right: 10px;
+    color: #1e90ff;
+    font-size: 16px;
+}
+
+
+h2 {
+   
+    margin-right: 50px; /* Espacement entre le texte et l'image */
+}
+
+
+
+.rien{
+    font-family: "Montserrat";
+text-align:center;
+}
+
+
+.nav-links {
+font-size: 18px; /* Taille du texte */
+color: black; /* Couleur du texte */
+text-decoration: none; /* Supprime le soulignement */
+margin: 0 15px; /* Espacement entre les liens */
+transition: color 0.3s ease-in-out; /* Animation au survol */
+display: inline-block;
+padding: 10px 15px;
+font-size: 14px;
+color: white;
+background: #0c3f7c;
+border-radius: 5px;
+text-decoration: none;
+background: #0c3f7c;
+border: rgb(226, 226, 226) solid 1px;
+}
